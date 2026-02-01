@@ -192,10 +192,10 @@ noBtn.addEventListener("click", () => {
         setImage("images/noFilter.webp"); 
     } else if (noClickCount === 3) {
         textElement.innerText = "I'm getting really icky now...!";
-        setImage("images/very angry cat.webp"); 
+        setImage("images/very-angry-cat.webp"); 
     } else if (noClickCount === 4) {
         textElement.innerText = "STOP IT! SAY YES! 😡";
-        setImage("images/very angry cat.webp"); 
+        setImage("images/very-angry-cat.webp"); 
     } else if (noClickCount >= 5) {
         textElement.innerText = "ACCEPPPPPTTTT MY LOVEEEEEEE!!!! 🔥🔥🔥";
         const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize);
