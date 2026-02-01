@@ -24,7 +24,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px 0; /* Add some vertical padding */
 }
 
 .game-container {
@@ -163,4 +164,38 @@ body {
     20%, 80% { transform: translate3d(2px, 0, 0); }
     30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
     40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .game-container {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .image-area {
+        height: auto;
+        aspect-ratio: 4/3; /* Maintain aspect ratio */
+        max-height: 300px;
+    }
+
+    #dialogue-text {
+        font-size: 1rem;
+    }
+
+    .game-btn {
+        padding: 15px 30px; /* Larger touch targets */
+    }
+
+    #choice-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .game-btn.yes, .game-btn.no {
+        width: 100%;
+        font-size: 1.2rem;
+    }
 }
