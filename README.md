@@ -15,4 +15,4 @@ This project is ready to be hosted on GitHub Pages.
 4. Select the `main` branch and `/ (root)` folder.
 5. Click **Save**.
 
-Your site will be live at `https://<your-username>.github.io/<repository-name>/`.
+Your site will be live at: [https://socom1.github.io/valentinesDay/](https://socom1.github.io/valentinesDay/)
